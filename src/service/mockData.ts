@@ -20,6 +20,6 @@ const data = [
   },
 ] as const;
 
-export const database = async () => {
+export const mockData = async () => {
   return await setTimeout(2000, data);
 };
