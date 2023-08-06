@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Echo } from "@/organisms/Echo";
-import { PostList } from "@/organisms/PostList";
+import { UserList } from "@/organisms/UserList";
 
 const Home = () => {
   return (
@@ -14,7 +14,6 @@ const Home = () => {
           priority
         />
       </div>
-
       <div>
         <Image
           src="/next.svg"
@@ -25,7 +24,7 @@ const Home = () => {
         />
       </div>
       {/* Server */}
-      <PostList />
+      <UserList />
 
       {/* Client */}
       <Echo />
