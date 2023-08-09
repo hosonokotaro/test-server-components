@@ -1,3 +1,5 @@
+import { list, name as styleName } from "@/molecules/User.css";
+
 type Props = {
   id: string;
   name: string;
@@ -5,9 +7,9 @@ type Props = {
 
 export const User = ({ id, name }: Props) => {
   return (
-    <div style={{ display: "flex", gap: "12px" }}>
+    <div className={list}>
       <div>{id}</div>
-      <div style={{ color: "#F66" }}>{name}</div>
+      <div className={styleName}>{name}</div>
     </div>
   );
 };

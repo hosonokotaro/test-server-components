@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 import { Button } from "@/atoms/Button";
 import { wrapper } from "@/organisms/Echo.css";
 
-export const Echo = (): JSX.Element => {
+export const Echo = () => {
   const [isSelected, setIsSelected] = useState(false);
   const isSelectedByUseRef = useRef(null);
   console.log("current isSelectedByUseRef", isSelectedByUseRef.current);
